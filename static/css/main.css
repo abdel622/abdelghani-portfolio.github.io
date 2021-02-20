@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+html{
+    width: 100%;
+    overflow: auto;
+}
+
 body{
-    width: 100vw;
+    width: 100%;
+    /* height: 100%; */
     font-family: 'Roboto', sans-serif;;
 }
 
@@ -165,6 +171,7 @@ main{
 
 .hero-section .hero--img{
     display: inline-block;
+    width: 100%;
     padding-top: 20vh;
     padding-bottom: 20px;
 }
@@ -172,7 +179,8 @@ main{
 .hero-section .hero--img img{
     border-radius: 50%;
     border: 4px dotted #339989;
-    width: 250px;
+    /* width: 250px; */
+    width: 50%;
 }
 
 .hero-section, .about-section, .formation-section, .skills-section, .contact-section {
@@ -361,6 +369,13 @@ footer p a{
 
     .hero-section .hero--img{
         padding-top: 35vh;
+    }
+
+    .technology{
+        width: 100%;
+        padding: 20px;
+        /* border:1px solid tomato; */
+        margin-bottom: 20px;
     }
 }
 
