@@ -171,7 +171,7 @@ main{
 
 .hero-section .hero--img{
     display: inline-block;
-    width: 100%;
+    width: 50%;
     padding-top: 20vh;
     padding-bottom: 20px;
 }
@@ -368,6 +368,7 @@ footer p a{
     }
 
     .hero-section .hero--img{
+        width: 80%;
         padding-top: 35vh;
     }
 
