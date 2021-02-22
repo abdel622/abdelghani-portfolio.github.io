@@ -95,7 +95,7 @@ nav.navbar .links ul{
 
 nav.navbar .links ul li{
     display: inline-block;
-    margin: 0 25px;
+    margin: 0 15px;
 }
 
 nav.navbar .links ul li a{
@@ -161,7 +161,8 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    /* height: 680px; */
+    height: auto;
     position: relative;
     z-index: 2;
 }
@@ -172,7 +173,7 @@ main{
 .hero-section .hero--img{
     display: inline-block;
     width: 50%;
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-bottom: 20px;
 }
 
@@ -208,7 +209,8 @@ main{
 
 .hero--description{
     width: 70%;
-    margin: 30px auto;
+    margin: 0 auto;
+    padding: 30px;
     font-size: 1.30rem;
 }
 
@@ -347,7 +349,7 @@ footer p a{
 
 /* Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .menu-icon{
         display: inline-block;
     }
@@ -368,8 +370,8 @@ footer p a{
     }
 
     .hero-section .hero--img{
-        width: 80%;
-        padding-top: 35vh;
+        width: 75%;
+        padding-top: 19vh;
     }
 
     .technology{
@@ -377,6 +379,23 @@ footer p a{
         padding: 20px;
         /* border:1px solid tomato; */
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .hero-section .hero--img{
+        width: 80%;
+        padding-top: 18vh;
+    }
+
+    .hero-section .hero--img{
+        width: 90%;
+        padding-top: 19vh;
+    }
+
+    nav.navbar .links ul li{
+        display: inline-block;
+        margin: 0 5px;
     }
 }
 
