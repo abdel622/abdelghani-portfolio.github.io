@@ -27,10 +27,11 @@
             </div>
             <div class="links" id="links">
                 <ul>
-                    <li><a href="#">Link1</a></li>
-                    <li><a href="#">Link2</a></li>
-                    <li><a href="#">Link3</a></li>
-                    <li><a href="#">Link4</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-sec">A-propos</a></li>
+                    <li><a href="#for-sec">Formation</a></li>
+                    <li><a href="#skills-sec">Compétences</a></li>
+                    <li><a href="#contact-sec">Contact</a></li>
                 </ul>
             </div>
             <div class="menu-icon" onclick="myFunction(this)">
@@ -43,37 +44,26 @@
     <main>
         <section class="hero-section">
             <div class="hero--img"><img
-                    src="https://mu.edu.iq/wp-content/uploads/2015/01/person-icon-person-icon-17.jpg" alt=""></div>
+                    src="./static/images/personal-pic.jpg" alt=""></div>
             <div class="hero--detail">
                 <h1 class="hero--title">abdelghani ait said</h1>
-                <p class="hero--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloribus reiciendis a, praesentium corporis molestiae iusto ipsa eos ad quos.</p>
+    <p class="hero--subtitle" style="font-family: 'Poppins', sans-serif;">Elève Ingénieur</p>
             </div>
         </section>
-        <section class="about-section">
+        <section class="about-section" id="about-sec">
             <div class="container">
                 <h1 class="heading">A propos de moi</h1>
-                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum natus,
-                    corporis minus
-                    aliquid accusamus, quia debitis nihil non dolores consectetur suscipit nulla laudantium amet fuga
-                    doloribus libero? Molestiae eligendi soluta cupiditate porro et quo deserunt. In assumenda quasi
-                    tenetur aliquam expedita qui. Quasi eius sunt, minus quibusdam veniam molestiae in obcaecati
-                    laudantium accusamus sed. Ullam veniam earum iusto sunt eaque aliquam hic, voluptas ipsum esse
-                    temporibus voluptatem corporis eum a possimus, doloribus fuga suscipit eveniet nobis. Perspiciatis
-                    eos deserunt soluta pariatur numquam, fugiat modi nostrum illum enim dolorem nihil obcaecati
-                    consequuntur. Officiis, porro, rem, accusamus molestias vitae voluptatum in laudantium magni error
-                    impedit reprehenderit accusantium. Perspiciatis minus dolorum, delectus nobis voluptatibus voluptate
-                    tempore nulla voluptates accusamus? Vero et autem velit, cumque nobis quod totam laudantium. Minima
-                    voluptatem itaque numquam voluptates corrupti minus animi error quam aspernatur vel quas labore
-                    incidunt perspiciatis ad quia, cum molestias! Enim, perferendis laborum. Nostrum?</p>
+                <p class="about-text"><span style="font-size: 2.5rem; font-weight: 700;">J</span>e m’appelle Abdlelghani Ait said et j’ai 21 ans. je suis un élève ingénieur à l'Ecole Nationale d'Agriculture de Meknes. Je suis actuellement en quatrième année. En plus d'agronomie, je suis passionné d’informatique et plus particulièrement le développement des applications web.
+                    Dans ce Portfolio, vous pourrez consulter des informations concernant ma formation, mes compétences, ainsi que les informations de contact.</p>
             </div>
         </section>
-        <section class="formation-section">
+        <section class="formation-section" id="for-sec">
             <div class="container">
                 <h1 class="heading">Formation & Stages</h1>
-
+                <img src="./static/images/timeLine.png" alt="TimeLine">
             </div>
         </section>
-        <section class="skills-section">
+        <section class="skills-section" id="skills-sec">
             <div class="skills-technologies">
                 <div class="container">
                     <h1 class="heading">Technologies & Softwares</h1>
@@ -130,24 +120,38 @@
                     <div class="container">
                         <h1 class="heading">Langues</h1>
                         <h2 class="lang-title">Tamazight</h2>
-                        <div class="lang-progressbar">ProgressBar</div>
+                        <div class="lang-progressbar"><div class="progress-tam" style="width: 100%; top: 0; left: 0; height: 100%; border-radius: 15px;"></div></div>
                         <h2 class="lang-title">Arabe</h2>
-                        <div class="lang-progressbar">ProgressBar</div>
+                        <div class="lang-progressbar"><div class="progress-ar" style="width: 100%; top: 0; left: 0; height: 100%; border-radius: 15px;"></div></div>
                         <h2 class="lang-title">Français</h2>
-                        <div class="lang-progressbar">ProgressBar</div>
+                        <div class="lang-progressbar"><div class="progress-fr" style="width: 70%; top: 0; left: 0; height: 100%; border-radius: 15px;"></div></div>
                         <h2 class="lang-title">Anglais</h2>
-                        <div class="lang-progressbar">ProgressBar</div>
+                        <div class="lang-progressbar"><div class="progress-en" style="width: 60%; top: 0; left: 0; height: 100%; border-radius: 15px;"></div></div>
                     </div>
                 </div>
             
 
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact-sec">
             <div class="container">
                 <h1 class="heading">Contact</h1>
                 <div class="content">
-                    <div class="contact-mail">Email</div>
-                    <div class="contact-social">Social Links</div>
+                    <div class="contact-mail">
+                        <h2 style="display: inline-block; border-bottom: 3px solid #131515;">Email</h2>
+                        <div class="email">
+                            <div class="email-box"><a href="mailto:abdelghaniaitsaid@gmail.com">abdelghaniaitsaid@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h2 style="display: inline-block; border-bottom: 3px solid #131515;">Social Links</h2>
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook fa-3x fb-logo" style="color: #4267B2;"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus fa-3x gp-logo" style="color: #DD4B39;"></i></a></li>
+                                <li><a href="https://github.com/abdel622"><i class="fab fa-github fa-3x github-logo" style="color: #211F1F;"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -155,7 +159,7 @@
                 alt=""></button>
     </main>
     <footer>
-        <p class="created-by">Site créé par <a href="#">ABELGHANI AIT SAID</a></p>
+        <p class="created-by">Site créé par <a href="https://github.com/abdel622">ABELGHANI AIT SAID</a></p>
     </footer>
     <script src="./static/js/main.js"></script>
 </body>

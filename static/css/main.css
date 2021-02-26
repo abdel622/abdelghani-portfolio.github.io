@@ -7,6 +7,7 @@
 html{
     width: 100%;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -68,7 +69,7 @@ nav.navbar{
 }
 
 nav.navbar .logo{
-    margin: 20px;
+    margin: 10px;
 }
 
 nav.navbar .logo .logo-text{
@@ -95,12 +96,33 @@ nav.navbar .links ul{
 
 nav.navbar .links ul li{
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav.navbar .links ul li a{
     color: #F0EFF4;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
 }
+
+nav.navbar .links ul li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #F0EFF4;
+    bottom:0;
+    left: -100%;
+    transition: all 0.3s ease-out;
+}
+
+nav.navbar .links ul li a:hover::after{
+    left: 0;
+}
+
 /* Menu Icon */
 .menu-icon {
     display: none;
@@ -173,7 +195,7 @@ main{
 .hero-section .hero--img{
     display: inline-block;
     width: 50%;
-    padding-top: 25vh;
+    padding-top: 20vh;
     padding-bottom: 20px;
 }
 
@@ -207,16 +229,18 @@ main{
     color: #339989;
 }
 
-.hero--description{
+.hero--subtitle{
     width: 70%;
     margin: 0 auto;
-    padding: 30px;
-    font-size: 1.30rem;
+    padding: 15px;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 
 .about-section{
-    min-height: 300px;
+    /* min-height: 300px; */
     /* background-color: #FFFAFB; */
     background-color: #FFFAFB;
     color: #131515;
@@ -225,6 +249,11 @@ main{
 .formation-section{
     min-height: 300px;
     background-color: #131515;
+}
+
+.formation-section img{
+    width: 90%;
+    margin: 25px auto;
 }
 
 .skills-section{
@@ -241,10 +270,16 @@ main{
 }
 
 .skills-section .lang-progressbar{
-    background-color: #339989;
     border-radius: 15px;
-    padding: 5px;
+    background-color: #FFFAFB;
+    padding: 7px;
     margin: 20px;
+    position: relative;
+}
+
+.skills-section .lang-progressbar div{
+    position: absolute;
+    background-color: #339989;
 }
 
 .skills-technologies{
@@ -271,22 +306,21 @@ main{
 }
 
 .technology .title-tech{
-    color: tomato;
     font-size: 1rem;
     padding: 5px;
 }
 
  .technology .icon-tech{
-    color: tomato;
     /* font-size: 1.5rem; */
 }
 
 .about-text{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 40px;
-    font-size: 1.25rem;
-    line-height: 1.3;
+    font-size: 1.3rem;
+    line-height: 1.45;
+    text-align: center;
 }
 
 .contact-section{
@@ -298,27 +332,71 @@ main{
     display: block;
     width: 100%;
     height: 100%;
-    border: 1px solid tomato;
+}
+
+.contact-section h2{
+    color: #131515;
+    font-size: 1.75rem;
+}
+
+.contact-mail, .contact-social{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links{
+    padding: 20px;
+}
+
+.social-links ul{
+    list-style-type: none;
+}
+
+
+.social-links ul li{
+    display: inline-block;
+    margin: 10px;
 }
 
 .contact-mail{
-    background-color: violet;
-    display: flex;
     width: 50%;
     height: 150px;
-    justify-content: center;
-    align-items: center;
     float: left;
 }
 
+.contact-mail .email{
+    padding: 15px;
+}
+
+.contact-mail .email .email-box{
+    border: 2.5px solid #131515;
+    color: #131515;
+    padding: 25px;
+    transition: 0.25s all ease-in-out;
+}
+
+
+.contact-mail .email .email-box:hover{
+    border: 2.5px solid #131515;
+    color: #131515;
+    background-color: #339989;
+    padding: 30px 50px;
+}
+
+.contact-mail .email .email-box a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: black;
+}
 .contact-social{
-    background-color: turquoise;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 150px;
     width: 50%;
     float: left;
+    margin-bottom: 25px;
 }
 
 footer{
@@ -371,31 +449,114 @@ footer p a{
 
     .hero-section .hero--img{
         width: 75%;
-        padding-top: 40vh;
+        padding-top: 33vh;
+    }
+
+
+    .hero--title{
+        font-size: 2rem;
+    }
+
+    .hero--subtitle{
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1.75rem;
     }
 
     .technology{
-        width: 100%;
+        width: 33%;
         padding: 20px;
         /* border:1px solid tomato; */
         margin-bottom: 20px;
+    }
+
+    .contact-mail, .contact-social{
+        width: 100%;
+        float: none;
     }
 }
 
 @media only screen and (max-width: 480px){
     .hero-section .hero--img{
         width: 80%;
-        padding-top: 40vh;
+        padding-top: 33vh;
+        width: 90%;
+
         /* padding-top: 600px; */
     }
 
-    .hero-section .hero--img{
+    .hero--title{
+        font-size: 1.75rem;
+    }
+
+    .hero--subtitle{
         width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1.25rem;
+    }
+
+    .about-text{
+        font-size: 1rem;
+        line-height: 1.2;
     }
 
     nav.navbar .links ul li{
         display: inline-block;
         margin: 0 5px;
     }
+
+    .technology{
+        width: 50%;
+    }
+
+    #scroll-to-up-btn {
+        width: 45px;
+      }
+
+      .lang-title{
+          font-size: 1.25rem;
+      }
+
+      .contact-mail .email .email-box{
+        padding: 10px;
+    }
+    
+    .contact-mail .email .email-box:hover{
+        padding: 15px 25px;
+    }
+    footer{
+        padding: 10px;
+    }
+    
+    footer p{
+        font-size: 1rem;
+    }
+    
+    footer p a{
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 360px){
+    .hero-section .hero--img{
+        width: 75%;
+    }
+
+    .technology{
+        width: 100%;
+    }
+    .heading {
+        font-size: 2rem;  
+    }
+    
+
+    #scroll-to-up-btn {
+        width: 25px;
+      }
+
+  
 }
 
