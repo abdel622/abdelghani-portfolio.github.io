@@ -1,17 +1,17 @@
 
 // Icon Menu
-function myFunction(x) {
-    x.classList.toggle("change");
-    if (x.classList.contains("change")){
-        var el = document.getElementById("links");
-        el.classList.add("working");
-        document.querySelector('header').setAttribute("style", "max-height:190px !important;")
-    }else{
-        var el = document.getElementById("links");
-        el.classList.remove("working")
-        document.querySelector('header').setAttribute("style", "max-height:125px !important;")
-    }
-} 
+// function myFunction(x) {
+//     x.classList.toggle("change");
+//     if (x.classList.contains("change")){
+//         var el = document.getElementById("links");
+//         el.classList.add("working");
+//         document.querySelector('header').setAttribute("style", "max-height:190px !important;")
+//     }else{
+//         var el = document.getElementById("links");
+//         el.classList.remove("working")
+//         document.querySelector('header').setAttribute("style", "max-height:125px !important;")
+//     }
+// } 
 
 
 
