@@ -441,10 +441,17 @@ footer p a{
         margin: 0 !important;
     } */
 
-    .links ul{
+
+    nav.navbar .links {
+        width: 100vw;
+    }
+
+    nav.navbar .links ul{
         width: 100%;
-        text-align: center;
-        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     nav.navbar{
@@ -510,11 +517,6 @@ footer p a{
         line-height: 1.2;
     }
 
-    nav.navbar .links ul li{
-        display: inline-block;
-        margin: 0 5px;
-    }
-
     .technology{
         width: 50%;
     }
@@ -567,9 +569,6 @@ footer p a{
         width: 25px;
       }
 
-      nav.navbar .links ul li{
-        display: block;
-    }
   
 }
 
