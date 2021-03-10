@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./static/images/port.ico" />
-    <title>Portfolio</title>
+    <title>ABDELGHANI | Portfolio</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <!-- Fontawesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!-- Transition -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Css -->
     <link rel="stylesheet" href="./static/css/main.css">
 </head>
@@ -22,7 +26,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <span class="logo-text">Portfolio
+                <span class="logo-text">ABDELGHANI
                     <hr>
                 </span>
             </div>
@@ -35,15 +39,10 @@
                     <li><a href="#contact-sec">Contact</a></li>
                 </ul>
             </div>
-            <!-- <div class="menu-icon" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div> -->
         </nav>
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section" data-aos="fade-down">
             <div class="hero--img"><img
                     src="./static/images/personal-pic.jpg" alt=""></div>
             <div class="hero--detail">
@@ -51,26 +50,26 @@
     <p class="hero--subtitle" style="font-family: 'Poppins', sans-serif;">Elève Ingénieur</p>
             </div>
         </section>
-        <section class="about-section" id="about-sec">
-            <div class="container">
-                <h1 class="heading">A propos de moi</h1>
-                <p class="about-text"><span style="font-size: 2.5rem; font-weight: 700;">J</span>e m’appelle Abdlelghani Ait said et j’ai 21 ans. je suis un élève ingénieur à l'Ecole Nationale d'Agriculture de Meknes. Je suis actuellement en quatrième année. En plus d'agronomie, je suis passionné d’informatique et plus particulièrement le développement des applications web.
+        <section class="about-section" id="about-sec" >
+            <div class="container" data-aos="fade-up">
+                <h1 class="heading"><img  style="width: 32px;" src="./static/images/icons/iconmonstr-user-1 1.svg"/> propos de moi</h1>
+                <p class="about-text"><span style="font-size: 2.5rem; font-weight: 700;">J</span>e m’appelle Abdelghani Ait said et j’ai 21 ans. je suis un élève ingénieur à l'Ecole Nationale d'Agriculture de Meknes. Je suis actuellement en quatrième année. En plus d'agronomie, je suis passionné d’informatique et plus particulièrement le développement des applications web.
                     Dans ce Portfolio, vous pourrez consulter des informations concernant ma formation, mes compétences, ainsi que les informations de contact.</p>
             </div>
         </section>
         <section class="formation-section" id="for-sec">
-            <div class="container">
-                <h1 class="heading">Formation & Stages</h1>
+            <div class="container" data-aos="fade-right">
+                <h1 class="heading"><img  style="width: 32px;" src="./static/images/icons/iconmonstr-school-21 1.svg"/>  Formation & Stages</h1>
                 <img src="./static/images/timeLine.png" alt="TimeLine">
             </div>
         </section>
         <section class="skills-section" id="skills-sec">
             <div class="skills-technologies">
-                <div class="container">
-                    <h1 class="heading">Technologies & Softwares</h1>
+                <div class="container" data-aos="fade-up">
+                    <h1 class="heading"><img  style="width: 32px;" src="./static/images/icons/iconmonstr-code-2 1.svg"/> Technologies & Softwares</h1>
                     <div class="techs">
                         <div class="technology">
-                            <div class="icon-tech"> <i class="fab fa-html5 fa-7x"></i></div>
+                            <div class="icon-tech" style="color:#E44D26;"> <i class="fab fa-html5 fa-7x"></i></div>
                             <h3 class="title-tech">HTML5</h3>
                         </div>
                         <div class="technology">
@@ -118,8 +117,8 @@
                 </div>
             </div>
                 <div class="skills-lang">
-                    <div class="container">
-                        <h1 class="heading">Langues</h1>
+                    <div class="container" data-aos="fade-down">
+                        <h1 class="heading"> <img  style="width: 32px;" src="./static/images/icons/iconmonstr-language-11 1.svg"/> Langues</h1>
                         <h2 class="lang-title">Tamazight</h2>
                         <div class="lang-progressbar"><div class="progress-tam" style="width: 100%; top: 0; left: 0; height: 100%; border-radius: 15px;"></div></div>
                         <h2 class="lang-title">Arabe</h2>
@@ -134,11 +133,11 @@
 
         </section>
         <section class="contact-section" id="contact-sec">
-            <div class="container">
-                <h1 class="heading">Contact</h1>
+            <div class="container" data-aos="fade-right">
+                <h1 class="heading"><img  style="width: 32px;" src="./static/images/icons/iconmonstr-email-2 1.svg"/> Contact</h1>
                 <div class="content">
                     <div class="contact-mail">
-                        <h2 style="display: inline-block; border-bottom: 3px solid #131515;">Email</h2>
+                        <h2 style="display: inline-block; border-bottom: 3px solid #131515;"><img  style="width: 25px;" src="./static/images/icons/iconmonstr-email-13.svg"/> Email</h2>
                         <div class="email">
                             <div class="email-box"><a href="mailto:abdelghaniaitsaid@gmail.com">abdelghaniaitsaid@gmail.com</a></div>
                         </div>
@@ -161,6 +160,7 @@
     <footer>
         <p class="created-by">Site créé par <a href="https://github.com/abdel622">ABELGHANI AIT SAID</a></p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./static/js/main.js"></script>
 </body>
 

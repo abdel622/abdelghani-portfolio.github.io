@@ -1,21 +1,5 @@
+AOS.init();
 
-// Icon Menu
-// function myFunction(x) {
-//     x.classList.toggle("change");
-//     if (x.classList.contains("change")){
-//         var el = document.getElementById("links");
-//         el.classList.add("working");
-//         document.querySelector('header').setAttribute("style", "max-height:190px !important;")
-//     }else{
-//         var el = document.getElementById("links");
-//         el.classList.remove("working")
-//         document.querySelector('header').setAttribute("style", "max-height:125px !important;")
-//     }
-// } 
-
-
-
-// When the user scrolls down 10px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction(){
@@ -38,22 +22,9 @@ function scrollFunction(){
 } 
 
 
-
-
 // Scroll to up Button
 //Get the button:
 mybutton = document.getElementById("scroll-to-up-btn");
-
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

@@ -197,14 +197,24 @@ main{
     width: 50%;
     padding-top: 16vh;
     padding-bottom: 20px;
+    position: relative;
+
 }
 
 .hero-section .hero--img img{
     border-radius: 50%;
-    border: 4px dotted #339989;
+    border: 8px solid #FFFAFB;
     /* width: 250px; */
     width: 50%;
+    transition: all 0.3s ease-out ;
 }
+
+.hero-section .hero--img img:hover{
+    border: 8px solid #339989;
+}
+
+
+
 
 .hero-section, .about-section, .formation-section, .skills-section, .contact-section {
     width: 100%;
@@ -227,7 +237,21 @@ main{
     font-weight: 700;
     text-transform: capitalize;
     color: #339989;
+    display: inline-block;
+    padding: 15px;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    border-radius: 20px;
 }
+
+.hero--title:hover{
+    background-color: #339989;
+    color: #FFFAFB;
+}
+
+
+
+
 
 .hero--subtitle{
     width: 70%;
@@ -257,7 +281,7 @@ main{
 
 .formation-section img{
     width: 100%;
-    margin: 25px auto;
+    /* margin: 25px auto; */
 }
 
 .skills-section{
@@ -320,11 +344,37 @@ main{
 
 .about-text{
     width: 80%;
-    margin: 0 auto;
-    padding-bottom: 40px;
+    margin: 30px auto;
     font-size: 1.3rem;
     line-height: 1.45;
+    letter-spacing: 0.25px;
     text-align: center;
+    color: #2B2C28;
+    position: relative;
+}
+
+.about-text::after{
+    content: '';
+    position: absolute;
+    width:50px;
+    height: 50px;
+    left: -2%;
+    top: -2%;
+    border-left: 4px dotted #2B2C28;
+    border-top: 4px dotted #2B2C28;
+
+}
+
+.about-text::before{
+    content: '';
+    position: absolute;
+    width:50px;
+    height: 50px;
+    right: -2%;
+    bottom: -2%;
+    border-right: 4px dotted #2B2C28;
+    border-bottom: 4px dotted #2B2C28;
+
 }
 
 .contact-section{
@@ -384,10 +434,9 @@ main{
 
 
 .contact-mail .email .email-box:hover{
-    border: 2.5px solid #131515;
-    color: #131515;
+    color: #FFFAFB;
     background-color: #339989;
-    padding: 30px 50px;
+    border: none;
 }
 
 .contact-mail .email .email-box a{
@@ -395,7 +444,13 @@ main{
     font-size: 1.25rem;
     font-weight: 700;
     color: black;
+    transition: 0.25s all ease-in-out;
 }
+
+.contact-mail .email .email-box:hover > a{
+    color: #FFFAFB;
+}
+
 .contact-social{
     height: 150px;
     width: 50%;
